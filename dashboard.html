@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+        <title>test</title>
+
+        <!-- 부트스트랩 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/chart.min.css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <!-- 차트 1호 -->
+            <div class="row">
+                <!-- 프로세서 사용량, 백분률, 파이 차트 -->
+                <div class="col-md-3 col-xs-6">
+                    <div id="cpuState"></div>
+                </div>
+                <!-- 메모리 사용량, 백분률, 파이 차트 -->
+                <div class="col-md-3 col-xs-6">
+                    <div id="memState"></div>
+                </div>
+                <!-- 저장공간 사용량, 백분률, 파이 차트 -->
+                <div class="col-md-3 col-xs-6">
+                    <div id="storageState"></div>
+                </div>
+                <!-- 전체 컨테이너 대비 동작 중인 컨테이너 수, 백분률, 파이 차트 -->
+                <div class="col-md-3 col-xs-6">
+                    <div id="activeContainerState"></div>
+                </div>
+            </div> <!-- end of row -->
+            <!-- 차트 2호 -->
+            <div class="row">
+                <!-- 저장공간, 아마 막대 그래프 -->
+                <div class="col-md-6 col-xs-12"></div>
+                <!-- 전체 컨테이너 수와 실행 중인 컨테이너, 죽은 컨테이너, 아마 막대 그래프 -->
+                <div class="col-md-6 col-xs-12"></div>
+            </div> <!-- end of row -->
+            <!-- 관리 영역 -->
+            <div class="row">
+                <div class="col-md-12 col-xs-12"></div>
+                <div class="col-md-12 col-xs-12"></div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/code-snippet.min.js"></script>
+        <script src="js/tui-component-effects.min.js"></script>
+        <script src="js/raphael.min.js"></script>
+        <script src="js/chart.min.js"></script>
+        <script src="js/serverState.js"></script>
+    </body>
+</html>
